@@ -11,7 +11,7 @@ def test_relatorio_produto():
         "turma17",
         "estude muito",
     )
-    assert fake_product.__repr__ == (
+    assert fake_product.__repr__() == (
         "O produto xablau"
         " fabricado em 09-20-2021"
         " por Xablau S/A com validade"
