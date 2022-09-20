@@ -11,9 +11,9 @@ class SimpleReport:
         venc = [
             data["data_de_validade"]
             for data in list
-            if data["data_de_validade"] < today
+            if data["data_de_validade"] >= today
         ]
-        newest_venc = max(venc)
+        newest_venc = min(venc)
         industries = Counter([ind["nome_da_empresa"] for ind in list])
 
         return (
