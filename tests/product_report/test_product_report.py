@@ -18,7 +18,3 @@ def test_relatorio_produto():
         " até 10-20-2022"
         " precisa ser armazenado estude muito."
     )
-
-    
-
-
