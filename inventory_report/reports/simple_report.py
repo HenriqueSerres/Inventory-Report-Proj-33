@@ -6,6 +6,7 @@ class SimpleReport:
     @staticmethod
     def generate(lista):
         today = date.today().strftime("%Y-%m-%d")
+        print(lista)
         fab = [data["data_de_fabricacao"] for data in lista]
         older_fab = min(fab)
         venc = [
